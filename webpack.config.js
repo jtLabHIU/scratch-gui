@@ -20,7 +20,12 @@ const base = {
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
         host: '0.0.0.0',
-        port: process.env.PORT || 8601
+        port: process.env.PORT || 8601,
+        proxy: {
+            'jtS3H': {
+                target: 'http://localhost:5963'
+            }
+        }
     },
     output: {
         library: 'GUI',

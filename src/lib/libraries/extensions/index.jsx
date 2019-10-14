@@ -46,7 +46,50 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import jtHTTPIconURL from './microbit/microbit.png';
+import jtHTTPInsetIconURL from './microbit/microbit-small.svg';
+
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="jtTello"
+                description="Fly Tello by Scratch 3.0"
+                id="gui.extension.jttello.name"
+            />
+        ),
+        extensionId: 'jttello',
+        iconURL: jtHTTPIconURL,
+        insetIconURL: jtHTTPInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="jtLab Tello Controller"
+                description="jtLab Tello Controller"
+                id="gui.extension.jttello.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="jtHTTP"
+                description="HTTP Connector"
+                id="gui.extension.jthttp.name"
+            />
+        ),
+        extensionId: 'jthttp',
+        iconURL: jtHTTPIconURL,
+        insetIconURL: jtHTTPInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="jtLab HTTP Connector"
+                description="jtLab HTTP Connector"
+                id="gui.extension.jthttp.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
