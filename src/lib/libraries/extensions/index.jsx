@@ -54,40 +54,66 @@ export default [
         name: (
             <FormattedMessage
                 defaultMessage="jtTello"
-                description="Fly Tello by Scratch 3.0"
+                description="Name for the 'jtTello' extension"
                 id="gui.extension.jttello.name"
             />
         ),
         extensionId: 'jttello',
+        collaborator: 'jtLab, Hokkaido Information University',
         iconURL: jtHTTPIconURL,
         insetIconURL: jtHTTPInsetIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="jtLab Tello Controller"
-                description="jtLab Tello Controller"
+                defaultMessage="Tello Controller"
+                description="Description for the 'jtTello' extension"
                 id="gui.extension.jttello.description"
             />
         ),
+        internetConnectionRequired: true,
         featured: true
     },
-    {
+/*    {
         name: (
             <FormattedMessage
                 defaultMessage="jtHTTP"
-                description="HTTP Connector"
+                description="Name for the 'jtHTTP' extension"
                 id="gui.extension.jthttp.name"
             />
         ),
         extensionId: 'jthttp',
+        collaborator: 'jtLab, Hokkaido Information University',
         iconURL: jtHTTPIconURL,
         insetIconURL: jtHTTPInsetIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="jtLab HTTP Connector"
-                description="jtLab HTTP Connector"
+                description="Description for the 'jtHTTP' extension"
                 id="gui.extension.jthttp.description"
             />
         ),
+        internetConnectionRequired: true,
+        featured: false
+    },*/
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="jtMesh"
+                description="Name for the 'jtMesh' extension"
+                id="gui.extension.jtmesh.name"
+            />
+        ),
+        extensionId: 'jtmesh',
+        collaborator: 'jtLab, Hokkaido Information University',
+        iconURL: jtHTTPIconURL,
+        insetIconURL: jtHTTPInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Scratch Mesh (Remote Sensors Protocol) client/server"
+                description="Description for the 'jtMesh' extension"
+                id="gui.extension.jtmesh.description"
+            />
+        ),
+        internetConnectionRequired: true,
         featured: true
     },
     {
