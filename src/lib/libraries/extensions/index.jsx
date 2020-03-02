@@ -46,8 +46,10 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-import jtHTTPIconURL from './microbit/microbit.png';
-import jtHTTPInsetIconURL from './microbit/microbit-small.svg';
+import jtTelloIconURL from './jttello/jttello.png';
+import jtTelloInsetIconURL from './jttello/jttello-small.svg';
+import jtMeshIconURL from './jtmesh/jtmesh.png';
+import jtMeshInsetIconURL from './jtmesh/jtmesh-small.svg';
 
 export default [
     {
@@ -59,9 +61,9 @@ export default [
             />
         ),
         extensionId: 'jttello',
-        collaborator: 'jtLab, Hokkaido Information University',
-        iconURL: jtHTTPIconURL,
-        insetIconURL: jtHTTPInsetIconURL,
+        collaborator: 'jtLab, Hokkaido Information University.',
+        iconURL: jtTelloIconURL,
+        insetIconURL: jtTelloInsetIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Tello Controller"
@@ -82,8 +84,8 @@ export default [
         ),
         extensionId: 'jthttp',
         collaborator: 'jtLab, Hokkaido Information University',
-        iconURL: jtHTTPIconURL,
-        insetIconURL: jtHTTPInsetIconURL,
+        iconURL: jtTelloIconURL,
+        insetIconURL: jtTelloInsetIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="jtLab HTTP Connector"
@@ -104,8 +106,8 @@ export default [
         ),
         extensionId: 'jtmesh',
         collaborator: 'jtLab, Hokkaido Information University',
-        iconURL: jtHTTPIconURL,
-        insetIconURL: jtHTTPInsetIconURL,
+        iconURL: jtMeshIconURL,
+        insetIconURL: jtMeshInsetIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Scratch Mesh (Remote Sensors Protocol) client/server"
