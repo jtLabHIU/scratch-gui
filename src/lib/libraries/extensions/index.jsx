@@ -47,9 +47,10 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import jtTelloIconURL from './jttello/jttello.png';
-import jtTelloInsetIconURL from './jttello/jttello-small.svg';
+import jtTelloInsetIconURL from './jttello/jttello-small.png';
+//import jtTelloInsetIconURL from './jttello/jttello-small.svg';
 import jtMeshIconURL from './jtmesh/jtmesh.png';
-import jtMeshInsetIconURL from './jtmesh/jtmesh-small.svg';
+import jtMeshInsetIconURL from './jtmesh/jtmesh-small.png';
 
 export default [
     {
