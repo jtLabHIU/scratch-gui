@@ -145,10 +145,6 @@ LibraryItem.propTypes = {
     extensionId: PropTypes.string,
     featured: PropTypes.bool,
     hidden: PropTypes.bool,
-<<<<<<< HEAD
-    iconSource: LibraryItemComponent.propTypes.iconSource, // single icon
-    icons: PropTypes.arrayOf(LibraryItemComponent.propTypes.iconSource), // rotating icons
-=======
     iconMd5: PropTypes.string,
     iconRawURL: PropTypes.string,
     icons: PropTypes.arrayOf(
@@ -157,7 +153,6 @@ LibraryItem.propTypes = {
             md5ext: PropTypes.string // 3.0 library format
         })
     ),
->>>>>>> upstream/develop
     id: PropTypes.number.isRequired,
     insetIconURL: PropTypes.string,
     internetConnectionRequired: PropTypes.bool,
