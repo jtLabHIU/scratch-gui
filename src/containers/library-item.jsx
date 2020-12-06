@@ -91,14 +91,17 @@ class LibraryItem extends React.PureComponent {
         const nextIconIndex = (this.state.iconIndex + 1) % this.props.icons.length;
         this.setState({iconIndex: nextIconIndex});
     }
-    curIconSource () {
+    curIconMd5 () {
+        const iconMd5Prop = this.props.iconMd5;
         if (this.props.icons &&
             this.state.isRotatingIcon &&
-            this.state.iconIndex < this.props.icons.length &&
-            this.props.icons[this.state.iconIndex]) {
-            return this.props.icons[this.state.iconIndex];
+            this.state.iconIndex < this.props.icons.length) {
+            const icon = this.props.icons[this.state.iconIndex] || {};
+            return icon.md5ext || // 3.0 library format
+                icon.baseLayerMD5 || // 2.0 library format, TODO GH-5084
+                iconMd5Prop;
         }
-        return this.props.iconSource;
+        return iconMd5Prop;
     }
     render () {
         const iconSource = this.curIconSource();
@@ -142,8 +145,19 @@ LibraryItem.propTypes = {
     extensionId: PropTypes.string,
     featured: PropTypes.bool,
     hidden: PropTypes.bool,
+<<<<<<< HEAD
     iconSource: LibraryItemComponent.propTypes.iconSource, // single icon
     icons: PropTypes.arrayOf(LibraryItemComponent.propTypes.iconSource), // rotating icons
+=======
+    iconMd5: PropTypes.string,
+    iconRawURL: PropTypes.string,
+    icons: PropTypes.arrayOf(
+        PropTypes.shape({
+            baseLayerMD5: PropTypes.string, // 2.0 library format, TODO GH-5084
+            md5ext: PropTypes.string // 3.0 library format
+        })
+    ),
+>>>>>>> upstream/develop
     id: PropTypes.number.isRequired,
     insetIconURL: PropTypes.string,
     internetConnectionRequired: PropTypes.bool,
