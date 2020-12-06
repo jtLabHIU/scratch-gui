@@ -104,7 +104,10 @@ class LibraryItem extends React.PureComponent {
         return iconMd5Prop;
     }
     render () {
-        const iconSource = this.curIconSource();
+        const iconMd5 = this.curIconMd5();
+        const iconURL = iconMd5 ?
+            `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/` :
+            this.props.iconRawURL;
         return (
             <LibraryItemComponent
                 bluetoothRequired={this.props.bluetoothRequired}
@@ -114,7 +117,8 @@ class LibraryItem extends React.PureComponent {
                 extensionId={this.props.extensionId}
                 featured={this.props.featured}
                 hidden={this.props.hidden}
-                iconSource={iconSource}
+                iconURL={iconURL}
+                icons={this.props.icons}
                 id={this.props.id}
                 insetIconURL={this.props.insetIconURL}
                 internetConnectionRequired={this.props.internetConnectionRequired}
