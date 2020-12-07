@@ -48,9 +48,10 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import jtTelloIconURL from './jttello/jttello.png';
 import jtTelloInsetIconURL from './jttello/jttello-small.png';
-//import jtTelloInsetIconURL from './jttello/jttello-small.svg';
 import jtMeshIconURL from './jtmesh/jtmesh.png';
 import jtMeshInsetIconURL from './jtmesh/jtmesh-small.png';
+import jtV2microbitIconURL from './microbit/microbit.png';
+import jtV2microbitInsetIconURL from './microbit/microbit-small.svg';
 
 export default [
     {
@@ -117,6 +118,28 @@ export default [
             />
         ),
         internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="jtV2micro:bit"
+                description="Name for the 'jtV2micro:bit' extension"
+                id="gui.extension.jtv2microbit.name"
+            />
+        ),
+        extensionId: 'jtv2microbit',
+        collaborator: 'jtLab, Hokkaido Information University',
+        iconURL: jtV2microbitIconURL,
+        insetIconURL: jtV2microbitInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Yet another unofficial micro:bit v2.0 extention"
+                description="Description for the 'jtV2micro:bit' extension"
+                id="gui.extension.jtv2microbit.description"
+            />
+        ),
+        bluetoothRequired: true,
         featured: true
     },
     {
